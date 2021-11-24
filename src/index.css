@@ -1,13 +1,106 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+* {
+  font-family: 'Mulish', sans-serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar{
+  background-color: #fff  !important;
+}
+
+.navbar-brand{
+  font-size: 1.8rem !important;
+  color: #565387;
+}
+
+.menu_active{
+  font-weight: bold;
+  border-bottom: 1px solid #565387;
+}
+
+.navbar a{
+  font-size: 1.2rem ;
+}
+
+.navbar a:hover{
+  color: #3489db !important;
+}
+
+/* Home page  */
+#header{
+  width: 100%;
+  height: 80vh;
+  margin-top: 65px;
+}
+
+#header h1{
+  margin: 0 0 10px 0;
+  font-size: 44px;
+  font-weight: 700;
+  color: #000;
+}
+
+#header .brand_name{
+  color: #3489db;
+}
+
+#header h2{
+  color: #484848;
+  font-size: 20px;
+}
+
+#header .btn-get-started{
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px ;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: #3489db;
+  border: 2px solid #3489db;
+  text-decoration: none;
+}
+
+#header .btn-get-started:hover{
+  background: #3489db;
+  color: #fff;
+}
+
+.header-img{
+  text-align: right;
+}
+
+#header .animated{
+  animation:  up-down 2s ease-in-out infinite alternate-reverse both;
+  width: 83%;
+}
+
+@keyframes up-down {
+    0%{
+      transform: translateY(10px);
+    }
+    100%{
+      transform: translateY(-10px);
+    }
+}
+@-webkit-keyframes up-down {
+    0%{
+      transform: translateY(10px);
+    }
+    100%{
+      transform: translateY(-10px);
+    }
+}
+
+.btn-width{
+  width: 100%;
+}
+
+.foot_div{
+  position: relative;
+  top: 10px;
 }
