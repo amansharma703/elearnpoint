@@ -1,7 +1,6 @@
-import React from 'react';
-import { Card } from '../Components/Card';
-import Sdata from '../API/Sdata';
-import Footer from '../Components/Footer';
+import React from "react";
+import { Card } from "../Components/Card";
+import Sdata from "../API/Sdata";
 const Service = () => {
     return (
         <>
@@ -19,7 +18,6 @@ const Service = () => {
                     </div>
                 </div>
             </div>
-            <Footer />
         </>
     );
 };
